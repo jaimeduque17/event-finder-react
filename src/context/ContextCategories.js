@@ -7,7 +7,7 @@ export const ConsumerCategories = ContextCategories.Consumer;
 
 class ProviderCategories extends Component {
 
-    token = '';
+    token = '5552HWP7QP3QTNQEAEWA';
 
     state = { 
         categories: []
@@ -18,7 +18,7 @@ class ProviderCategories extends Component {
     }
 
     getCategories = async () => {
-        let url = `https://www.eventbriteapi.com/v3/categories/?token=${this.token}&locale=es_ES`;
+        let url = `https://www.eventbriteapi.com/v3/categories/?token=${this.token}&locale=us_EN`;
 
         let categories = await axios.get(url);
 
